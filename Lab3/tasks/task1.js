@@ -10,9 +10,8 @@ export default function task1() {
     transform(chunk, encoding, callback) {
       const raw = chunk.toString().trim();
 
-      // ❗ Игнорируем пустые строки
       if (!raw) {
-        return callback(); 
+        return callback(); //  Игнорируем пустые строки
       }
 
       try {
